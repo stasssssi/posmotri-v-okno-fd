@@ -52,8 +52,8 @@ html {
 
 .result__video-container {
   width: 711px;
-  height: 386px;
-  margin-bottom: 24px;
+  height: 100%;
+  margin-bottom: 4px;
 }
 
 .result__video {
@@ -119,6 +119,10 @@ html {
   display: block;
 }
 
+.content__card-link:hover {
+  text-decoration: underline;
+}
+
 .content__video-card-title {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -134,7 +138,12 @@ html {
 .content__video-card-description {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  display: -webkit-box;            
+  -webkit-box-orient: vertical;     
+  -webkit-line-clamp: 4;            
+  overflow: hidden;                
+  text-overflow: ellipsis;           
+  white-space: normal; 
 }
 
 .search-form__checkbox-list {
@@ -253,7 +262,7 @@ html {
 }
 
 .content__card-link_current {
-  background-color: #545050;
+  background-color: #1b1919;
 }
 
 .content__card-link_current:active {
@@ -319,3 +328,8 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 } 
+
+.result__video-container .preloader,
+.content__list-container .preloader {
+  position: relative;
+}
