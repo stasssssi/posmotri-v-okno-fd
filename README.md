@@ -1,1 +1,1 @@
-https://github.com/staaaaasi/posmotri-v-okno-fd
+https://github.com/stasssssi/posmotri-v-okno-fd
