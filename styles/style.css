@@ -23,7 +23,7 @@ html {
 
 .content {
   display: flex;
-  column-gap: 30px;
+  column-gap: 24px;
   align-items: flex-end;
   margin: 0 auto;
   width: 1140px;
@@ -52,7 +52,8 @@ html {
 
 .result__video-container {
   width: 711px;
-  margin-bottom: 16px;
+  height: 386px;
+  margin-bottom: 24px;
 }
 
 .result__video {
@@ -86,6 +87,7 @@ html {
 
 .content__video-card-description-container {
   flex-grow: 1;
+  width: 196px;
 }
 
 .search-form__fieldset-title {
@@ -101,7 +103,6 @@ html {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 75px;
-  font-style: bold;
   line-height: 0.9;
   letter-spacing: 0;
   opacity: 1;
@@ -109,7 +110,7 @@ html {
 }
 
 .content__accent {
-  opacity: 0.3;
+  color: #545050;
 }
 
 .content__card-link {
@@ -125,6 +126,12 @@ html {
   font-size: 30px;
   line-height: 1;
   letter-spacing: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.content__video-card-description {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -217,6 +224,7 @@ html {
   border: 1px solid #fff;
   font-size: 18px;
   font-family: inherit;
+  font-weight: 700;
 }
 
 .button:hover{
@@ -242,6 +250,10 @@ html {
 
 .more-button {
   width: 100%;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .content__card-link_current:active {
@@ -307,14 +319,3 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 } 
-
-.result__video-container,
-.content__list-container {
-  position: relative;
-}
-
-.result__video-container .preloader,
-.content__list-container .preloader {
-  position: absolute;
-}
-
